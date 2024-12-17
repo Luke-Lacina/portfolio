@@ -61,9 +61,4 @@ public class Crypto {
         this.quantity = quantity;
     }
 
-    @Override
-    public String toString() {
-        return id + ", " + name + ", " + symbol + ", "  +price +", " + quantity;
-    }
-
 }

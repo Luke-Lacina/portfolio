@@ -15,12 +15,6 @@ public class CryptoService {
 
     private List<Crypto> cryptos = new ArrayList<>();
 
-    @PostConstruct
-    public void initCryptos() throws CryptoException {
-        cryptos.add(new Crypto("Ethereum", "ETH", 3447.35, 0.25));
-        cryptos.add(new Crypto("Bitcoin", "BTC", 92888.11, 0.25));
-    }
-
     public void addCrypto(Crypto crypto) throws CryptoException {
         cryptos.add(crypto);
     }
